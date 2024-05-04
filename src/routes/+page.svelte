@@ -77,7 +77,7 @@
 	}
 </script>
 
-<section class="mx-auto max-w-md px-8 pt-[35vh]">
+<section class="mx-auto max-w-md px-8 pt-8 md:pt-[35vh]">
 	{#if questions.length === 0}
 		<form on:submit={handleSubmit} class="flex flex-col w-full">
 			<label for="decision" class="block font-medium leading-6 text-gray-900"
@@ -92,9 +92,9 @@
 					type="text"
 					bind:value={question}
 				/>
-				<div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
+				<div class="hidden absolute inset-y-0 right-0 md:flex py-1.5 pr-1.5">
 					<kbd
-						class="inline-flex items-center rounded border border-gray-200 px-1 font-sans text-xs text-gray-400"
+						class="inline-flex items-center rounded border border-gray-200 px-1 font-sans text-xs text-gray-400 bg-white"
 					>
 						⏎ Enter / Return
 					</kbd>
